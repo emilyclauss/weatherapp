@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <h1>Weather App</h1>
+
+    <!-- City Input-->
+    <form id="get-weather" action="">
+        <label for="city">City</label>
+        <input id="city" type="text" list="cities" autocomplete="off">
+        <datalist id="cities">
+            <option value="cities"></option>
+        </datalist>
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <div id="weather" style="display: none;">
+        <!-- Location Photo -->
+        <img id="city-img" src="" alt="">
+
+        <!-- Location -->
+        <h1 id="city-name"></h1>
+
+        <!-- Farenheit/Celsius -->
+        <p>
+            <span id="temp"></span>  |  
+            <span id="temp-C"></span>
+        </p>    
+
+        <!-- Condition -->
+        <div class="condition">
+            <img id="condition-img" src="" alt="">
+            <p id="condition"></p>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
