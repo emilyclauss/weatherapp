@@ -16,7 +16,7 @@ axios.get('https://api.teleport.org/api/urban_areas/').then(function(response){
 $('#get-weather').on('submit', function(event){
     event.preventDefault();
     city = $('#city').val();
-    axios.get('http://api.weatherapi.com/v1/current.json', {
+    axios.get('https://api.weatherapi.com/v1/current.json', {
         params: {
             'key': 'c503c597bd9b48b0964191101232604',    
             'q': city
