@@ -18,7 +18,7 @@ $('#get-weather').on('submit', function(event){
     city = $('#city').val();
     axios.get('https://api.weatherapi.com/v1/current.json', {
         params: {
-            'key': 'c503c597bd9b48b0964191101232604',    
+            'key': process.env.API_KEY,    
             'q': city
         }
     }).then(function(response){
